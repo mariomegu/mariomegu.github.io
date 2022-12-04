@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #041A57;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container h1 {
+    font-size: 80px;
+    font-weight: 600px;
+}
+.container h2 {
+    font-size: 70px;
+    font-weight: 600px;
+}
+
+span{
+    color: #02F9F5
+}
