@@ -1,0 +1,8 @@
+Esto es una frase de ejemplo.
+Aquí hay otra frase interesante.
+Esta es una tercera frase para probar.
+¡Hola mundo!
+Estamos aprendiendo JavaScript.
+El lenguaje HTML es fundamental para la web.
+CSS añade estilo a nuestras páginas.
+Este es el final del archivo.

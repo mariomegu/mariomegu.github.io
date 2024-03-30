@@ -1,0 +1,117 @@
+/* Estilos generales */
+body {
+    font-family: 'Century Gothic', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    text-align: center;
+    margin: 20px;
+}
+
+.options{
+    text-align: center;
+}
+
+.accordion {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+
+/* Ajustes al botón del acordeón */
+.accordion-btn {
+    background-color: #f4f4f4;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    font-family: 'Century Gothic', Verdana;
+    font-size: 16px;
+    position: relative; /* Para posicionar el icono */
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.accordion-btn::before {
+    content: "\25B6"; /* Código Unicode para una flecha hacia la derecha */
+    position: absolute;
+    left: 10px;
+    top: 50%; /* Centra verticalmente la flecha */
+    transform: translateY(-50%); /* Ajusta la posición vertical */
+    color: #416c9b;
+}
+
+/* Ajuste del espaciado a la derecha del icono */
+.accordion-btn {
+    padding-left: 30px; /* Ajusta el espaciado a la derecha del icono */
+}
+
+.answer {
+    padding: 10px;
+    display: none;
+    font-size: 16px;
+    background-color: #ddd;
+    border-radius: 15px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para cuando el botón está activo */
+.active {
+    background-color: #ddd;
+}
+
+ul {
+    list-style-type:upper-alpha;
+}
+
+li{
+    padding: 5px;
+    margin-top: 5px;
+}
+
+
+/* Estilos para la respuesta correcta */
+.correct {
+    border: 1px solid #006D5C;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: normal;
+    color: #006D5C;
+    background-color: rgb(188, 250, 204);
+}
+
+.incorrect {
+    color: #EE5145;
+    text-decoration: line-through;
+}
+
+.possible {
+    color: #0070C0;
+}
+
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+.search-container {
+    margin-top: 20px;
+}
+
+#searchInput {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#searchInput:focus {
+    outline: none;
+    border-color: #007bff; /* Color de borde al estar enfocado */
+}
+

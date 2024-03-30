@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECHNICAL QUESTIONNAIRE FOR CERTIFICATION</title>
+    
+    <link rel="icon" type="image/svg+xml" href="/assets/svg/shield-fill-check.svg">
+    <!-- CSS Boostrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+
+    <!-- Simbolos SVG de boostrap -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        
+        <symbol id="Shield-fill-check" viewbox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm2.146 5.146a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647z"/>
+        </symbol>
+
+      </svg>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><span style="color: orange;"><svg class="bi" width="20" height="20"><use xlink:href="#Shield-fill-check"/></svg></span> ./M4R10M36U _</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <!-- <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li> -->
+            </ul>
+            <form class="d-flex" role="search">
+              
+              <a class="btn btn-outline-info" href="https://www.linkedin.com/in/mariomegu/" target="_blank">>_ Who I am? _</a>
+            </form>
+          </div>
+          
+        </div>
+    </nav>
+
+    <div class="container col-lg-6">
+        <div class="contenedor-main row mt-5">
+            <main class="col-12 text-center">
+                <h2>TECHNICAL QUESTIONNAIRE FOR CERTIFICATION:</h2>
+                <h2>Certified Professional: KATA Platform & EDR Expert</h2>
+                <div class="options">
+                    <span class="correct"> CORRECT</span>
+                    <span class="incorrect">INCORRECT</span>
+                    <span class="possible">POSSIBLE</span>
+                </div> <br>  
+
+                <div class="search-container mt-3">
+                    <input type="text" id="searchInput" onkeyup="searchAccordion()" placeholder="Search for questions..">
+                </div>
+            </main>
+            <aside>
+                <!-- Start Questions -->
+                <div class="accordion">
+                    <div class="question">
+                        <button class="accordion-btn">When is it recommended to enable the extraction of email messages from SPAN traffic on a dedicated sensor?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li >Always</li>
+                                    <li class="incorrect">Always when SPAN traffic contains non-encrypted SMTP traffic</li>
+                                    <li class="correct">When other mail integration methods (POP3 or SMTP) cannot be used and SPAN traffic contains non-encrypted SMTP traffic</li>
+                                    <li>If mail comes from KSMG</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <button class="accordion-btn">You are loading ISO images of virtual machines to the sandbox, but the operation fails because of an unstable network connection. How else can you upload virtual machine images to the sandbox?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li>Copy the images to the folder /var/opt/kaspersky/apt/files using the scp utility (or any other method that you prefer)</li>
+                                    <li class="correct">Request the sandbox installation drive image from Kaspersky (it includes the images of virtual machines) and reinstall the sandbox</li>
+                                    <li>There’s nothing you can do apart from waiting and trying again when the network is less loaded</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <button class="accordion-btn">Where must the connection between the central node and sandbox server be initiated from when exchanging certificates for IPsec authentication?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li class="correct">From the central node</li>
+                                    <li class="incorrect">From the sandbox server</li>
+                                    <li>From any side</li>
+                                    <li>You do not need to do anything of the kind</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <button class="accordion-btn">Which technology is responsible for scanning password-protected archives in KATA Platform?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li>Sandbox</li>
+                                    <li class="correct">Anti-malware engine</li>
+                                    <li>YARA</li>
+                                    <li>TAA (Targeted attack analyzer)</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <button class="accordion-btn">This question is related to Kaspersky Endpoint Detection and Response Expert (Cloud). Which widgets are exclusively available for Kaspersky EDR Expert?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li class="correct">New alerts (EDR Expert)</li>
+                                    <li class="correct">Closed alerts (EDR Expert)</li>
+                                    <li class="incorrect">Most frequent threats (EDR Expert)</li>
+                                    <li class="correct">Closed incidents (EDR Expert)</li>
+                                    <li class="correct">New incidents (EDR Expert)</li>
+                                    <li>Most frequent threats</li>
+                                    <li class="correct">Closed alerts unlinked from incidents (EDR Expert)</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <button class="accordion-btn">Which file operations can prevention rules block in Kaspersky EDR?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li class="correct">Running an executable file or script</li>
+                                    <li>Creating a file in the specified folder</li>
+                                    <li>Running an executable file or script under a particular user account</li>
+                                    <li>Changing the specified file in any program</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <button class="accordion-btn">Where must the connection between the central node and sensor be initiated from when exchanging certificates for IPsec authentication?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li class="incorrect">From the central node</li>
+                                    <li>From the sensor</li>
+                                    <li>From any side</li>
+                                    <li>You do not need to do anything of the kind</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <button class="accordion-btn">This question is related to Kaspersky Endpoint Detection and Response Expert (Cloud). Where can you configure the sending of information about events collected by Kaspersky Endpoint Detection and Response Expert to Kaspersky Anti Targeted Attack Platform Central Node?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li>In Console Settings | Integration | KATA</li>
+                                    <li class="incorrect">Send a connection request from the Kaspersky Anti Targeted Attack Platform Central Node interface</li>
+                                    <li class="correct">This integration is not implemented yet</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <button class="accordion-btn">To save on equipment maintenance, the customer wants to deploy KATA on a minimal number of servers. Which configuration would you recommend?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li>Install all three roles – central node, sensor and sandbox – on a single server</li>
+                                    <li class="correct">Install the central node with sensor functionality on one server, and sandbox on another server</li>
+                                    <li>Install the central node with sandbox functionality on one server, and the sensor on another server</li>
+                                    <li>Install each role – central node, sensor, and sandbox – on a separate dedicated server</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <button class="accordion-btn">Which of the following roles can servers have in the KATA Platform? (Select 3 answers)</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li>Database server</li>
+                                    <li class="correct">Sandbox</li>
+                                    <li class="correct">Central node</li>
+                                    <li class="correct">(Network) sensor</li>
+                                    <li>Network Attack Analyzer</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Agrega más preguntas y respuestas aquí -->
+            
+                    <div class="question">
+                        <button class="accordion-btn">This question is related to Kaspersky Endpoint Detection and Response Expert (Cloud). Which actions can an IOC Scan task take when it detects an IOC?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li class="incorrect">Send an email notification</li>
+                                    <li class="incorrect">Download the object for scanning</li>
+                                    <li class="correct">Scan critical areas</li>
+                                    <li class="correct">Isolate the computer from the network</li>
+                                    <li class="correct">Move a copy to Quarantine and delete the object</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Pregunta 2 -->
+                    <div class="question">
+                        <button class="accordion-btn">Which technology is responsible for scanning password-protected archives in KATA Platform?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li>Sandbox</li>
+                                    <li class="correct">Anti-malware engine</li>
+                                    <li>YARA</li>
+                                    <li>TAA (Targeted attack analyzer)</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Pregunta 3 -->
+                    <div class="question">
+                        <button class="accordion-btn">How often does Kaspersky Endpoint Agent synchronize tasks, isolation and execution prevention settings with the central node (under the default configuration)?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li>Continuously (maintains a permanent connection and instantly learns about configuration changes)</li>
+                                    <li class="correct">Every 5 minutes</li>
+                                    <li>Once a minute</li>
+                                    <li>Every 15 minutes</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Pregunta 4 -->
+                    <div class="question">
+                        <button class="accordion-btn">Select the correct statement about the need to specify the company name for a central node in a distributed KATA Platform installation.</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li>You do not need to specify a company name for the primary central node</li>
+                                    <li class="correct">The company name is a must for any central node in a distributed installation</li>
+                                    <li>The company name is optional for any central node in a distributed installation</li>
+                                    <li>You do not need to specify a company name for secondary central nodes</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Pregunta 5 -->
+                    <div class="question">
+                        <button class="accordion-btn">Which of the following KATA servers can distribute updates to other KATA servers?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li>Sandbox</li>
+                                    <li class="correct">Central node</li>
+                                    <li>Sensor</li>
+                                    <li>Any of the above</li>
+                                    <li>None of the above</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Pregunta 6 -->
+                    <div class="question">
+                        <button class="accordion-btn">What does a sensor do?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li class="correct">Extracts URLs from network traffic for reputation checks</li>
+                                    <li class="correct">Checks extracted URLs using the URL reputation technology</li>
+                                    <li class="correct">Extracts objects from network traffic for analysis</li>
+                                    <li>Scans extracted files using the YARA technology</li>
+                                    <li>Scans extracted files using the Anti-Malware Engine</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Pregunta 7 -->
+                    <div class="question">
+                        <button class="accordion-btn">Which operations are implemented in REST API of Central Node version 4.0?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li class="correct">Create a file scan task</li>
+                                    <li class="incorrect">Create a file scan task for the Sandbox component</li>
+                                    <li class="correct">Create a network isolation task</li>
+                                    <li class="incorrect">Create a task for connecting a specific sensor</li>
+                                    <li class="correct">Create a request to delete scanning results</li>
+                                    <li class="correct">Get a list of alerts with all details</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Pregunta 8 -->
+                    <div class="question">
+                        <button class="accordion-btn">Select the statements that correctly characterize the URL reputation module on a sensor.</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li class="incorrect">It uses updatable databases</li>
+                                    <li class="correct">It uses information from KSN</li>
+                                    <li>It supports a custom list of untrusted URLs</li>
+                                    <li>It detects addresses of botnet C&C servers</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Pregunta 9 -->
+                    <div class="question">
+                        <button class="accordion-btn">How can you add indicators of attack (TAA rules) that are used for analyzing events received from endpoint agents?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li class="correct">Save from a manually created search in Threat Hunting</li>
+                                    <li class="correct">Import from a file in OpenIOC format</li>
+                                    <li class="incorrect">Receive from KSN</li>
+                                    <li>Receive along with updates</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+            
+                    <!-- Pregunta 10 -->
+                    <div class="question">
+                        <button class="accordion-btn">In which of the following situations will Kaspersky Endpoint Agent trust the central node certificate when establishing a secure connection?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li class="incorrect">If the certificate is issued by a trusted certification authority according to the settings of the computer where the Endpoint Agent is installed</li>
+                                    <li>If Active Directory has a serviceConnectionPoint object where this certificate is specified</li>
+                                    <li>If the certificate is stored in the Endpoint Agent settings (for example, has been delivered with the Kaspersky Endpoint Agent policy from the KSC server)</li>
+                                    <li>Kaspersky Endpoint Agent 3.12 trusts any central node certificate</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+            
+                    <!-- Pregunta 11 -->
+                    <div class="question">
+                        <button class="accordion-btn">On which type of hypervisor can you install a sandbox server?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li>KVM</li>
+                                    <li class="correct">VMware ESXi</li>
+                                    <li>A sandbox server cannot be installed on a virtual machine</li>
+                                    <li>Microsoft Hyper-V</li>
+                                    <li>Any</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+            
+                    <!-- Pregunta 12 -->
+                    <div class="question">
+                        <button class="accordion-btn">Kaspersky Endpoint Agent 3.14 integrated into Kaspersky Endpoint Security for Windows 11.11 is installed on the network computers. Where can you find information about threats detected by Kaspersky Endpoint Security in the central node web console?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li>KES detections are published in the Alerts section</li>
+                                    <li class="incorrect">The total number of KES detections is displayed on the computer card in the Endpoint Agents section </li>
+                                    <li>KES detections are available in the Threat Hunting event database</li>
+                                    <li>KES detections are not available in the central node web console</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+            
+                    <!-- Pregunta 13 -->
+                    <div class="question">
+                        <button class="accordion-btn">A dedicated sensor receives a copy of network traffic that contains the organization’s encrypted mail traffic. Which mail traffic retrieval methods would you recommend configuring on this sensor?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li>Only SPAN</li>
+                                    <li class="incorrect">POP3 and SMTP</li>
+                                    <li>Either POP3 or SMTP</li>
+                                    <li>SPAN, POP3, and SMTP</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+            
+                    <!-- Pregunta 14 -->
+                    <div class="question">
+                        <button class="accordion-btn">Which of the following settings are manageable only on the primary central node, and cannot be managed on secondary nodes?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li>Events</li>
+                                    <li class="correct">Licenses</li>
+                                    <li class="correct">Users</li>
+                                    <li>VIP</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+            
+                    <!-- Pregunta 15 -->
+                    <div class="question">
+                        <button class="accordion-btn">What is the minimum number of disks required for Ceph storage of the cluster storage node of the Central Node?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li>1</li>
+                                    <li class="correct">3</li>
+                                    <li>2</li>
+                                    <li>4</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+            
+                    <!-- Pregunta 16 -->
+                    <div class="question">
+                        <button class="accordion-btn">Which component of KATA/KEDR sends objects for scanning to a sandbox server?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li>Sensor</li>
+                                    <li class="correct">Central node</li>
+                                    <li>Endpoint Agent</li>
+                                    <li>EXTERNAL sensor via API</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+            
+                    <!-- Pregunta 17 -->
+                    <div class="question">
+                        <button class="accordion-btn">What is a ‘company’ in a distributed KATA/KEDR installation?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li>A range of IP addresses to which a threat may be related</li>
+                                    <li class="correct">An organizational unit to which one or several central nodes can be assigned</li>
+                                    <li>An organizational unit to which one or several secondary central nodes can be assigned</li>
+                                    <li>A mail domain to which threats may be related</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+            
+                    <!-- Pregunta 18 -->
+                    <div class="question">
+                        <button class="accordion-btn">The address of which cluster node of the Central Node can you use to open the KATA Platform web interface?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li>Storage node</li>
+                                    <li class="incorrect">Processing node</li>
+                                    <li>First storage node</li>
+                                    <li>Any</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+            
+                    <!-- Pregunta 19 -->
+                    <div class="question">
+                        <button class="accordion-btn">Which of the following can result in an error when you connect a central node to a sandbox server?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li>The central node is already connected to another sandbox server</li>
+                                    <li class="correct">The UTC time differs on the servers</li>
+                                    <li>Another central node is already connected to the sandbox server</li>
+                                    <li>A license is not installed on the central node</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+            
+                    <!-- Pregunta 20 -->
+                    <div class="question">
+                        <button class="accordion-btn">Which of the following operating system versions is used on virtual machines within a sandbox?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li>Android</li>
+                                    <li class="correct">Centos 7.8</li>
+                                    <li>Astra Linux 1.7</li>
+                                    <li>Windows Server 2012 R2</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+            
+                    <!-- Pregunta 21 -->
+                    <div class="question">
+                        <button class="accordion-btn">Which of the following is important when connecting KATA servers to each other?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li>Databases must be updated on both servers</li>
+                                    <li class="correct">The same UTC time must be set on the servers</li>
+                                    <li>Both servers must be connected to KSN</li>
+                                    <li>A license must be installed on both servers</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+            
+                    <!-- Pregunta 22 -->
+                    <div class="question">
+                        <button class="accordion-btn">Which user roles are available in KATA Platform?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li class="correct">Administrator</li>
+                                    <li class="correct">Senior security officer</li>
+                                    <li class="correct">Auditor</li>
+                                    <li>Senior administrator</li>
+                                    <li>EDR administrator</li>
+                                    <li>Mariomegu</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+            
+                    <!-- Pregunta 23 -->
+                    <div class="question">
+                        <button class="accordion-btn">An analyst has configured scanning for indicators of compromise on the network endpoints to start at 02:00. Which time zone does this time refer to?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li class="incorrect">The central node’s time zone </li>
+                                    <li>The time zone of the computer on which the web console was running while the schedule was set up</li>
+                                    <li>UTC</li>
+                                    <li class="incorrect">The time zone of the computer where scanning for indicators will run</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+            
+                    <!-- Pregunta 24 -->
+                    <div class="question">
+                        <button class="accordion-btn">How can you edit settings of the preprocessor module?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li>Edit the file var/opt/kaspersky/apt-preprocessor/preprocessor.conf using the vim or nano utility</li>
+                                    <li class="correct">Use the console-settings-updater utility</li>
+                                    <li>In the central node web interface</li>
+                                    <li>Only the user who has the ‘local’ administrator role can edit them in the central node web interface</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+            
+                    <!-- Pregunta 25 -->
+                    <div class="question">
+                        <button class="accordion-btn">Select the correct statement about the settings of the operating system installed on a central node:</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li>Installation of new programs and updates is disabled</li>
+                                    <li class="incorrect">External media are disabled </li>
+                                    <li>SSH is disabled</li>
+                                    <li>Local login to the system is disabled</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+            
+                    <!-- Pregunta 26 -->
+                    <div class="question">
+                        <button class="accordion-btn">This question is related to Kaspersky Endpoint Detection and Response Expert (Cloud). Which user role has full access to Kaspersky EDR Expert functions (including alerts, incidents, custom IOA rules and threat hunting), but is not allowed to manage users and roles?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li class="correct">Senior security officer</li>
+                                    <li>Security officer</li>
+                                    <li>EDR analyst</li>
+                                    <li>EDR operator</li>
+                                    <li>Mariomegu</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+            
+                    <!-- Pregunta 27 -->
+                    <div class="question">
+                        <button class="accordion-btn">Which attribute can you use to prohibit access to a file by prevention rules in Kaspersky EDR?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li>File name</li>
+                                    <li class="incorrect">Full file path </li>
+                                    <li class="correct">MD5 checksum</li>
+                                    <li>SHA256 checksum</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+            
+                    <!-- Pregunta 28 -->
+                    <div class="question">
+                        <button class="accordion-btn">Which node of a KATA Platform cluster can receive files from a mail server using SMTP?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li>Storage server</li>
+                                    <li class="correct">Processing server</li>
+                                    <li>Only the first processing server</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+            
+                    <!-- Pregunta 29 -->
+                    <div class="question">
+                        <button class="accordion-btn">Which access limitations can you specify for a senior security officer account in a distributed KATA/KEDR installation?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li class="correct">Permit access to the information of specific companies only</li>
+                                    <li class="incorrect">Prohibit logging on to the console of the primary central node </li>
+                                    <li class="incorrect">Permit access to the information of specific central nodes only </li>
+                                    <li>Prohibit logging on to the consoles of secondary central nodes of the company</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+            
+                    <!-- Pregunta 30 -->
+                    <div class="question">
+                        <button class="accordion-btn">Which of the following threat detection technologies are implemented on a sensor?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li>Anti-Malware Engine</li>
+                                    <li class="correct">URL reputation (KSN)</li>
+                                    <li class="correct">IDS (Suricata)</li>
+                                    <li>TAA (Targeted Attack Analyzer)</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+            
+            
+                    <!-- Pregunta 32 -->
+                    <div class="question">
+                        <button class="accordion-btn">Some routes are specified as Static Routes in the Sandbox server settings. Which operations are they used in?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li>Downloading updates</li>
+                                    <li class="incorrect">Providing access to the internet from within virtual machines</li>
+                                    <li class="correct">Sending scanning results to the central node</li>
+                                    <li>Accessing KSN</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+            
+                    <!-- Pregunta 33 -->
+                    <div class="question">
+                        <button class="accordion-btn">This question is related to Kaspersky Endpoint Detection and Response Expert (Cloud). Which components are included with Kaspersky Endpoint Detection and Response Expert?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li class="correct">An EPP application that supports the Kaspersky Endpoint Detection and Response Expert functionality</li>
+                                    <li class="correct">Kaspersky Security Center Cloud Console</li>
+                                    <li class="correct">Kaspersky Security Center Network Agent</li>
+                                    <li class="correct">Threat Intelligence</li>
+                                    <li>Kaspersky Endpoint Agent</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+            
+                    <!-- Pregunta 35 -->
+                    <div class="question">
+                        <button class="accordion-btn">Which port of a sensor that acts as a proxy do endpoint agents connect to?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li>443</li>
+                                    <li class="incorrect">4443</li>
+                                    <li>8443</li>
+                                    <li>18443</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+            
+                    <!-- Pregunta 37 -->
+                    <div class="question">
+                        <button class="accordion-btn">An analyst has activated network isolation for a compromised endpoint using Kaspersky EDR and has not configured any exclusions. Which of the following exclusions always work?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li class="correct">For the DNS protocol</li>
+                                    <li class="incorrect">For the ICMP protocol</li>
+                                    <li class="correct">For the DHCP protocol</li>
+                                    <li class="correct">For Kaspersky applications</li>
+                                    <li>For Active Directory protocols</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+            
+                    <!-- Pregunta 39 -->
+                    <div class="question">
+                        <button class="accordion-btn">This question is related to Kaspersky Endpoint Detection and Response Expert (Cloud). Where can you specify which events to send from Kaspersky Security Center Cloud Console to SIEM?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li class="incorrect">In the properties of the KES policy, Application Settings | Detection and Response</li>
+                                    <li class="correct">In the KES policy properties, Event Configuration</li>
+                                    <li class="incorrect">In Console Settings | Integration | SIEM </li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+            
+                    <!-- Pregunta 40 -->
+                    <div class="question">
+                        <button class="accordion-btn">You can send file scanning requests to KATA from an external sensor using the URL https:// :443/kata/scanner/v1/sensors//scans. Which address must be specified after https?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li>Sandbox address</li>
+                                    <li class="correct">Central node address</li>
+                                    <li>Address of any sensor connected to the central node</li>
+                                    <li>Address of the KPSN server that has the Monitoring role</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+            
+                    <!-- Pregunta 41 -->
+                    <div class="question">
+                        <button class="accordion-btn">This question is related to Kaspersky Endpoint Detection and Response Expert (Cloud). Where can you configure the sending of information about events collected by Kaspersky Endpoint Detection and Response Expert to Kaspersky Anti Targeted Attack Platform Central Node?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li>In Console Settings | Integration | KATA</li>
+                                    <li class="correct">This integration is not implemented yet</li>
+                                    <li>Send a connection request from the Kaspersky Anti Targeted Attack Platform Central Node interface</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Pregunta 42 -->
+                    <div class="question">
+                        <button class="accordion-btn">You are loading ISO images of virtual machines to the sandbox, but the operation fails because of an unstable network connection. How else can you upload virtual machine images to the sandbox?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li class="correct">Copy the images to the folder /var/opt/kaspersky/apt/files using the scp utility (or any other method that you prefer)</li>
+                                    <li>Request the sandbox installation drive image from Kaspersky (it includes the images of virtual machines) and reinstall the sandbox</li>
+                                    <li>There’s nothing you can do apart from waiting and trying again when the network is less loaded</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Pregunta 43 -->
+                    <div class="question">
+                        <button class="accordion-btn">In which of the following scenarios will KATA be able to detect a threat in a file downloaded over HTTPS?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li>KATA receives a copy of traffic using the SPAN technology</li>
+                                    <li class="correct">KATA receives web traffic objects over ICAP from the proxy server where SSL protocol inspection is configured</li>
+                                    <li>KATA receives web traffic objects over ICAP from the proxy server</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Pregunta 44 -->
+                    <div class="question">
+                        <button class="accordion-btn">Select the correct statement about TAA (IOA) technology.</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li class="correct">TAA analysis is applied to events in real time, as soon as they arrive</li>
+                                    <li>TAA analysis is applied in the background to all events stored in the Threat Hunting database</li>
+                                    <li>TAA analysis is applied on schedule once a day to all events stored in the Threat Hunting database</li>
+                                    <li>TAA analysis is only applied at a security officer’s request</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Pregunta 45 -->
+                    <div class="question">
+                        <button class="accordion-btn">What minimum number of network interfaces does a Central Node cluster node require?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li>1</li>
+                                    <li class="correct">2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Pregunta 46 -->
+                    <div class="question">
+                        <button class="accordion-btn">How many endpoint agents can you connect to a secondary central node in KATA Platform?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li>Up to 5000</li>
+                                    <li class="incorrect">Up to 10000</li>
+                                    <li>Up to 15000</li>
+                                    <li>Up to 20000</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Pregunta 47 -->
+                    <div class="question">
+                        <button class="accordion-btn">Which parameter can you use to download a file from a computer for analysis by the ‘Get file’ task in the central node web console?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li class="correct">The file’s full path</li>
+                                    <li>A path mask</li>
+                                    <li>The file’s checksum (without the path)</li>
+                                    <li>The file’s creation date (without the path)</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Pregunta 48 -->
+                    <div class="question">
+                        <button class="accordion-btn">Which node of a Central Node cluster must be installed after you install the first storage node?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li>Storage node</li>
+                                    <li class="incorrect">Processing node</li>
+                                    <li>Storage node or processing node</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Pregunta 49 -->
+                    <div class="question">
+                        <button class="accordion-btn">Which operating system versions are used on virtual machines within a sandbox?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li class="correct">Windows XP</li>
+                                    <li class="correct">Windows 7</li>
+                                    <li class="correct">Windows 10</li>
+                                    <li class="correct">Centos 7.8</li>
+                                    <li>Windows Server 2012 R2</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Pregunta 50 -->
+                    <div class="question">
+                        <button class="accordion-btn">Which license do you need to purchase to be able to send objects for scanning to KATA Platform via REST API?</button>
+                        <div class="answer">
+                            <p>
+                                <ul>
+                                    <li>This functionality does not require a license</li>
+                                    <li class="correct">KATA</li>
+                                    <li>Any KATA or KEDR license</li>
+                                    <li>KEDR</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+            </aside>
+
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <div class="col-md-4 d-flex align-items-center">
+                  <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <span style="color: rgb(34, 34, 34);"><svg class="bi" width="20" height="20"><use xlink:href="#Shield-fill-check"/></svg></span>
+                  </a>
+                  <span class="mb-3 mb-md-0 text-muted">&copy; 2024 Aka. M4R10M36U</span>
+                </div>
+            
+            
+            </footer>
+        </div>
+      </div>
+    <script src="js/logical.js"></script>
+    
+</body>
+</html>
